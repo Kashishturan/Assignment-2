@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    body{
+        background-image: url(https://i.pinimg.com/564x/95/db/b1/95dbb110ca5f27c193e3ae9902c4330d.jpg);    
+    }
+    .container {
+        max-width: 360px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 150px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: lightblue;
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    .error-message {
+        color: red;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Login Form</h2>
+    <form id="loginForm" action="/login" method="post" >
+
+        <!-- onsubmit="return validateForm()">  -->
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Login">
+        <p>New to YouCare? <a href="signup.html">Sign Up</a></p>
+        <div id="error-msg" class="error-message"></div>
+    </form>
+</div>
+<!-- <script>
+    function validateForm() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        var errorMsg = document.getElementById('error-msg');
+
+        if (username === '' || password === '') {
+            errorMsg.innerText = 'Please enter both username and password.';
+            return false;
+        }
+
+        errorMsg.innerText = '';
+        return true;
+    }
+</script> -->
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "web-tech-project",
+  "version": "1.0.0",
+  "description": "YouCare is a skincare product store, which sells 6 products namely moisturizers, serums, cleanser, facewash, scrub and sunscreen. The project includes dedicated pages on these products along with why you should choose YouCare and login up and sign up pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.2"
+  }
+}

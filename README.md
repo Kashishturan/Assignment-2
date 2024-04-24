@@ -1,0 +1,1 @@
+YouCare is a skincare product store, which sells 6 products namely moisturizers, serums, cleanser, facewash, scrub and sunscreen. The project includes dedicated pages on these products along with why you should choose YouCare and login up and sign up pages.

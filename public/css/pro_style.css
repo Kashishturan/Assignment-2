@@ -1,0 +1,144 @@
+.one {
+    display: flex;
+    gap: 300px;
+    justify-content: space-evenly;
+    margin-left: 0px;
+
+}
+.logo {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+margin-left: -70px;
+border-radius: 12%;
+margin-top: 20px;
+}
+.t{
+    margin-top:70px;
+    margin-left: 500px;
+   
+}
+.t a{
+    margin-right: 20px;
+    font-size: x-large;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(14, 54, 104);
+}
+.content{
+    background-color: rgb(158, 222, 241);
+    width: 800px;
+    height: 500px;
+    margin-top: 70px;
+}
+.imgnslogan{
+    display: flex;
+    gap: 0px;
+    margin-top: 0px;
+}
+.imgg{
+    margin-top: 70px;
+}
+.h1{
+    font-size: 80px;
+    text-align: center;
+    padding: 50px;
+color: rgb(14, 54, 104);
+}
+.para{
+    margin-top: 100px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+  color:rgb(150, 56, 91);
+  
+}
+.products,.products2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.p1,.p2,.p3,.p4,.p5,.p6{
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    color:rgb(14, 54, 104) ;
+}
+.aboutus{
+    background-color: rgb(14, 54, 104);
+    margin: 0px;
+    padding: 0px;
+    margin-left: -10px;
+    margin-right: -13.5px;
+    color: white;
+
+}
+.desc{
+    text-align: center;
+    margin: 10px;
+    font-size: x-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .one {
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        justify-content: center; /* Center items when they wrap */
+        gap: 20px; /* Adjust the gap for smaller screens */
+    }
+
+    .logo {
+        margin-left: 0; /* Remove negative margin on smaller screens */
+    }
+
+    .t {
+        margin-left: 0; /* Remove margin on smaller screens */
+    }
+}

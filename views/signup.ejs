@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="content">
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signup-form" action="/signup" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username" required>
+
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+<!-- 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            <span class="error-message" id="phone-error"></span>
+
+            <label>Gender:</label>
+            <label class="gender-label"><input type="radio" name="gender" value="male"> Male</label>
+            <label class="gender-label"><input type="radio" name="gender" value="female"> Female</label>
+            <label class="gender-label"><input type="radio" name="gender" value="other"> Other</label><br> -->
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            var phoneInput = document.getElementById('phone');
+            var phoneError = document.getElementById('phone-error');
+
+            if (phoneInput.value.length !== 10) {
+                event.preventDefault(); 
+                phoneError.textContent = 'Phone number must be 10 digits long.';
+            } else {
+                phoneError.textContent = '';
+            }
+        });
+    </script>
+</body>
+</html>
